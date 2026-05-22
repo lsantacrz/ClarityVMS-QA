@@ -17,7 +17,7 @@ export class LoginPageElements {
         return this.page.locator('button[type="submit"]');
     }
     get forgotPasswordLink() {
-        const link = this.page.getByRole('link', { name: 'Forgot Password?' });
+        const link = this.page.getByRole('link', { name: 'Forgot your password?' });
         return link.click();
     }
 
