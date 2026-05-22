@@ -7,12 +7,13 @@ export class LoginPageElements {
     }   
 
     // Define the locators for the login page elements
-    get usernameInput() {
-        return this.page.locator('#username');
+    get textBoxes() {
+        return {
+            username: this.page.locator('#username'),
+            password: this.page.locator('#password')
+        }
     }
-    get passwordInput() {
-        return this.page.locator('#password');
-    }
+    // Define the locator for the login button and the forgot password link
     get loginButton() {
         return this.page.locator('button[type="submit"]');
     }
@@ -21,6 +22,6 @@ export class LoginPageElements {
         return link.click();
     }
 
-    //
+    
 
 }
